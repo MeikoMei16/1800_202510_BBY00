@@ -1,0 +1,69 @@
+/* Add some spacing and polish */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Overriding sections */
+.map-bg {
+  position: relative; /* For ::before positioning */
+  padding: 20px; /* Your original padding */
+}
+
+.map-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../public/images/map.png'); /* Your path */
+  background-size: auto; /* Your original setting */
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+.map-bg .container {
+  position: relative;
+  z-index: 2; /* Content above the map */
+}
+
+/* Ensure readability over the map */
+.card {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+}
+
+.py-5.bg-primary.text-white.text-center {
+  padding: 20px !important;
+}

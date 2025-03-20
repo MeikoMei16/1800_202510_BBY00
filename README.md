@@ -55,7 +55,7 @@ Example:
 │   └── style.css    # Example styles  
 ├── index.html       # Entry HTML file (in root, not src)  
 ├── package.json  
-└── vite.config.js   # Vite configuration  
+└── vite.config.ts   # Vite configuration  
 
 
 Within src/:  
