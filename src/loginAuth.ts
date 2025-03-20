@@ -5,7 +5,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import {  doc, setDoc } from 'firebase/firestore';
 import * as firebaseui from 'firebaseui';
 import 'firebaseui/dist/firebaseui.css';
-import { db, auth} from "./firebase.ts";
+import {db, auth} from "./firebase.ts";
 
 
 

@@ -2,20 +2,20 @@
 import { initializeApp } from "firebase/app";
 import {getAuth} from "firebase/auth";
 import {getFirestore} from "firebase/firestore";
-// TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+const myAPI: string = import.meta.env.VITE_FIREBASE_API;
+
 const firebaseConfig = {
-    apiKey: "AIzaSyAMd6uOBKNaq7VjK5rAM5VDBiD3gh6kgR8",
-    authDomain: "aa-5607f.firebaseapp.com",
-    databaseURL: "https://aa-5607f.firebaseio.com",
-    projectId: "aa-5607f",
-    storageBucket: "aa-5607f.firebasestorage.app",
-    messagingSenderId: "87623476991",
-    appId: "1:87623476991:web:bbfaf8e049cdadd0e7ceca",
-    measurementId: "G-784Z8S5HZ2"
+    apiKey: myAPI,
+    authDomain: "bby-00-comp1800.firebaseapp.com",
+    projectId: "bby-00-comp1800",
+    storageBucket: "bby-00-comp1800.firebasestorage.app",
+    messagingSenderId: "927805471010",
+    appId: "1:927805471010:web:8563c61b1beb80c1cbcd7b"
 };
 
 // Initialize Firebase
